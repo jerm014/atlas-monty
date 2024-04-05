@@ -11,5 +11,6 @@
  */
 void montySwap(stack_t **stack, int n)
 {
-	n = n;
+	n = deleteNodeAtIndex(stack, 1);
+	montyPush(stack, n);
 }

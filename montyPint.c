@@ -11,5 +11,9 @@
  */
 void montyPint(stack_t **stack, int n)
 {
-	
+	n = n;
+
+	if (stack)
+		printf("%d", (*stack)->n);
+
 }

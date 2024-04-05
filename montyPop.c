@@ -12,4 +12,5 @@
 void montyPop(stack_t **stack, int n)
 {
 	n = n;
+	deleteNodeAtIndex(stack, 0);
 }

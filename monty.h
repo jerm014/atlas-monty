@@ -32,18 +32,28 @@ typedef struct stack_s
 typedef struct instruction_s
 {
 	char *opcode;
-	void (*f)(stack_t **stack, int n);
+	void (*f)(stack_t **, int);
 } instruction_t;
 
 /* Functions used in Monty: */
 
-void montyAdd(stack_t **stack, int n);
-void montyNop(stack_t **stack, int n);
-void montyPall(stack_t **stack, int n);
-void montyPint(stack_t **stack, int n);
-void montyPop(stack_t **stack, int n);
-void montyPush(stack_t **stack, int n);
-void montySwap(stack_t **stack, int n);
-void (*monty_function(char *s))(stack_t **, int);
+int deleteNodeAtIndex(stack_t **, unsigned int);
+int free_double_pointer(char **);
+void montyAdd(stack_t **, int);
+void montyNop(stack_t **, int);
+void montyPall(stack_t **, int);
+void montyPint(stack_t **, int);
+void montyPop(stack_t **, int);
+void montyPush(stack_t **, int);
+void montySwap(stack_t **, int);
+void (*monty_function(char *))(stack_t **, int);
+char **tokenize(char *, char *);
+
+/* Error Messages */
+
+#define ERR_ARG_COUNT "USAGE: monty file\n"
+#define ERR_FILE "Error: Can't open file %s\n"
+#define ERR_INSTRUCTION "L%d: unknown instruction %s\n"
+#define ERR_MALLOC "Error: malloc failed\n"
 
 #endif

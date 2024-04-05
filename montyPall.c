@@ -11,5 +11,12 @@
  */
 void montyPall(stack_t **stack, int n)
 {
-		n = n;
+	n = n;
+
+	while (*stack)
+	{
+		printf("%d\n", (*stack)->n);
+		(*stack) = (*stack)->next;
+	}
+
 }

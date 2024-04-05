@@ -11,5 +11,6 @@
  */
 void montyNop(stack_t **stack, int n)
 {
+	stack = stack;
 	n = n;
 }
