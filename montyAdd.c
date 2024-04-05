@@ -11,6 +11,8 @@
  */
 void montyAdd(stack_t **stack, int n)
 {
+	// pop twice, add those two values, push new value.
+
 	stack_t *new_node = NULL;
 
 	n = n;
@@ -22,7 +24,7 @@ void montyAdd(stack_t **stack, int n)
 	if (new_node == NULL)
 		return (NULL);
 
-	new_node->n = 1;
+	new_node->n = //add first two;
 	new_node->next = *stack;
 
 	if (*stack)
@@ -30,6 +32,7 @@ void montyAdd(stack_t **stack, int n)
 	else
 		new_node->prev = NULL;
 
+	// delete nodes 2 and 3 (0 based numbering)
 	*stack = new_node;
 
 }
