@@ -32,18 +32,18 @@ typedef struct stack_s
 typedef struct instruction_s
 {
 	char *opcode;
-	void (*f)(stack_t **stack, unsigned int line_number);
+	void (*f)(stack_t **stack, int n);
 } instruction_t;
 
 /* Functions used in Monty: */
 
-void montyAdd(stack_t **stack, unsigned int line_number);
-void montyNop(stack_t **stack, unsigned int line_number);
-void montyPall(stack_t **stack, unsigned int line_number);
-void montyPint(stack_t **stack, unsigned int line_number);
-void montyPop(stack_t **stack, unsigned int line_number);
-void montyPush(stack_t **stack, unsigned int line_number);
-void montySwap(stack_t **stack, unsigned int line_number);
-void (*monty_function(char *s))(stack_t **, unsigned int);
+void montyAdd(stack_t **stack, int n);
+void montyNop(stack_t **stack, int n);
+void montyPall(stack_t **stack, int n);
+void montyPint(stack_t **stack, int n);
+void montyPop(stack_t **stack, int n);
+void montyPush(stack_t **stack, int n);
+void montySwap(stack_t **stack, int n);
+void (*monty_function(char *s))(stack_t **, int);
 
 #endif

@@ -1,15 +1,15 @@
 #include "monty.h"
 
 /**
- * montyPall-    print the stack
+ * montyPall- print the stack
  *
- * @stack:       pointer to the current stack
- * @line_number: the line number to get data from
+ * @stack:    pointer to the current stack
+ * @n:        unused data
  *
- * Return:       nothing
+ * Return:    nothing
  *
  */
-void montyPall(stack_t **stack, unsigned int line_number)
+void montyPall(stack_t **stack, int n)
 {
-	
+		n = n;
 }

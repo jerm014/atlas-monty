@@ -1,15 +1,15 @@
 #include "monty.h"
 
 /**
- * montyPop-     remove an item from the stack
+ * montyPop-  remove an item from the top of the stack
  *
- * @stack:       pointer to the current stack
- * @line_number: the line number to get data from
+ * @stack:    pointer to the current stack
+ * @n:        unused data
  *
- * Return:       nothing
+ * Return:    nothing
  *
  */
-void montyPop(stack_t **stack, unsigned int line_number)
+void montyPop(stack_t **stack, int n)
 {
-	
+	n = n;
 }

@@ -1,15 +1,15 @@
 #include "monty.h"
 
 /**
- * montySwap-    swap the top two items in the stack
+ * montySwap- swap the top two items in the stack
  *
- * @stack:       pointer to the current stack
- * @line_number: the line number to get data from
+ * @stack:    pointer to the current stack
+ * @n:        unused data
  *
- * Return:       nothing
+ * Return:    nothing
  *
  */
-void montySwap(stack_t **stack, unsigned int line_number)
+void montySwap(stack_t **stack, int n)
 {
-	
+	n = n;
 }

@@ -1,15 +1,15 @@
 #include "monty.h"
 
 /**
- * montyPush-     add an item to the stack
+ * montyPush- add an item to the stack
  *
- * @stack:       pointer to the current stack
- * @line_number: the line number to get data from
+ * @stack:    pointer to the current stack
+ * @n:        the value to add to the stack
  *
- * Return:       nothing
+ * Return:    nothing
  *
  */
-void montyPush(stack_t **stack, unsigned int line_number)
+void montyPush(stack_t **stack, int n)
 {
-	
+
 }

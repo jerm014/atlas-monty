@@ -1,15 +1,15 @@
 #include "monty.h"
 
 /**
- * montyPint-    add an item to the stack
+ * montyPint- print the value from the top of the stack
  *
- * @stack:       pointer to the current stack
- * @line_number: the line number to get data from
+ * @stack:    pointer to the current stack
+ * @n:        unused data
  *
- * Return:       nothing
+ * Return:    nothing
  *
  */
-void montyPint(stack_t **stack, unsigned int line_number)
+void montyPint(stack_t **stack, int n)
 {
 	
 }
