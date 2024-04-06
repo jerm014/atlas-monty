@@ -30,4 +30,7 @@ void (*monty_function(char *s))(stack_t **, char **, unsigned int)
 			return (montyError);
 		i++;
 	}
+
+/* it isn't possible to reach this line: */
+	return (NULL);
 }
