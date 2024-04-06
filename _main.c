@@ -16,13 +16,13 @@ int main(int argc, char **argv)
 	stack_t *stack = NULL;
 	unsigned int lineNumber;
 
-	if (argc != 2)
+	/*if (argc != 2)
 	{
 		fprintf(stderr, ERR_ARG_COUNT);
 		exit(EXIT_FAILURE);
-	}
+	}*/
 
-	file = fopen(argv[1], "r");
+	file = fopen("../bytecode/00.m", "r");
 	if (file == NULL)
 	{
 		fprintf(stderr, ERR_FILE, argv[1]);
@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 
 	 while (fgets(line, sizeof(line), file))
 	{
-		tokens = tokenize(line, " \n");
+		tokens = tokenize(line, " $\n");
 
 		if (tokens[0])
 			monty_function(tokens[0])(&stack, tokens, lineNumber);
