@@ -20,8 +20,15 @@ void montyMod(stack_t **stack, char **tokens, unsigned int lineNumber)
 	{
 		a = deleteNodeAtIndex(stack, 1);
 		b = deleteNodeAtIndex(stack, 0);
-		addNode(stack, tokens, (a % b));
-	}
+		if (b != 0)
+			addNode(stack, tokens, (a % b));
+		else
+		{
+			free_stack(*stack);
+			fprintf(stderr, ERR_DIV0, lineNumber);
+			free_double_pointer(tokens);
+			exit(EXIT_FAILURE);
+		}	}
 	else
 	{
 		free_stack(*stack);
