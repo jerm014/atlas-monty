@@ -15,5 +15,12 @@ void montyPop(stack_t **stack, char **tokens, unsigned int lineNumber)
 	tokens = tokens;
 	lineNumber = lineNumber;
 
-	deleteNodeAtIndex(stack, 0);
+	if (*stack)
+		deleteNodeAtIndex(stack, 0);
+	else
+	{
+		fprintf(stderr, ERR_POP, lineNumber);
+		free_double_pointer(tokens);
+		exit(EXIT_FAILURE);
+	}
 }
