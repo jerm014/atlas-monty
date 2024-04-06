@@ -65,6 +65,7 @@ char **tokenize(char *, char *);
 #define ERR_FILE			"Error: Can't open file %s\n"
 #define ERR_INSTRUCTION		"L%d: unknown instruction %s\n"
 #define ERR_PUSH			"L%d: usage: push integer\n"
+#define ERR_PINT			"L%d: can't pint, stack empty\n"
 #define ERR_MALLOC			"Error: malloc failed\n"
 
 #endif
