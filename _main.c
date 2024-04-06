@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		lineNumber++;
 	}
 
-	free_stack(&stack);
+	free_stack(stack);
 	fclose(file);
 	exit(EXIT_SUCCESS);
 }

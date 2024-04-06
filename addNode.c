@@ -17,7 +17,7 @@ void addNode(stack_t **stack, char **tokens, int n)
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
 	{
-		free_stack(&stack);
+		free_stack(*stack);
 		free_double_pointer(tokens);
 		fprintf(stderr, ERR_MALLOC);
 		exit(EXIT_FAILURE);

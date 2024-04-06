@@ -14,7 +14,7 @@ void free_stack(stack_t *node)
 	if (node)
 	{
 		if (node->next != NULL)
-			free_dlistint(node->next);
+			free_stack(node->next);
 
 		free(node);
 	}
