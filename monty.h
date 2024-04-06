@@ -60,6 +60,7 @@ void montySub(stack_t **, char **, unsigned int);
 void montyDiv(stack_t **, char **, unsigned int);
 void montyMul(stack_t **, char **, unsigned int);
 void montyMod(stack_t **, char **, unsigned int);
+void montyPchar(stack_t **, char **, unsigned int);
 
 char **tokenize(char *, char *);
 
@@ -79,5 +80,6 @@ char **tokenize(char *, char *);
 #define ERR_DIV0			"L%d: division by zero\n"
 #define ERR_MUL				"L%d: can't mul, stack too short\n"
 #define ERR_MOD				"L%d: can't mod, stack too short\n"
+#define ERR_PCHAR			"L%d: can't pchar, value out of range\n"
 
 #endif
