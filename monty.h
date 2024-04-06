@@ -56,6 +56,7 @@ void montyPint(stack_t **, char **, unsigned int);
 void montyPop(stack_t **, char **, unsigned int);
 void montyPush(stack_t **, char **, unsigned int);
 void montySwap(stack_t **, char **, unsigned int);
+void montySub(stack_t **, char **, unsigned int);
 
 char **tokenize(char *, char *);
 
