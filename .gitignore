@@ -56,3 +56,4 @@ core.*
 
 # Executable 
 monty
+.vscode/main
