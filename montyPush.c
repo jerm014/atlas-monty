@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * montyPush-  add an item to the stack
+ * montyPush-   add an item to the stack
  *
- * @stack:     pointer to the current stack
- * @tokens:    the value to add to the stack
+ * @stack:      pointer to the current stack
+ * @tokens:     the value to add to the stack
  * @lineNumber: the line number we are processing
  *
- * Return:     nothing
+ * Return:      nothing
  *
  */
 void montyPush(stack_t **stack, char **tokens, unsigned int lineNumber)

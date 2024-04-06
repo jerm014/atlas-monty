@@ -3,8 +3,9 @@
 /**
  * addNode-           add a node at the top of a doubly linked list
  *
- * @node:             the head of a dlistint_t linked list
- * @n:                the value to put in the node
+ * @stack:            the head of a dlistint_t linked list
+ * @tokens:           the value to put in the node
+ * @n:                the value of a node
  *
  * Return:            nothing
  *

@@ -30,12 +30,12 @@ int _main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	 while (fgets(line, sizeof(line), file))
+	while (fgets(line, sizeof(line), file))
 	{
 		tokens = tokenize(line, " $\n");
 
 		if (tokens[0])
-			monty_function(tokens[0])(&stack, tokens, lineNumber);
+			monty_function(tokens[0]) (&stack, tokens, lineNumber);
 
 		free_double_pointer(tokens);
 		lineNumber++;
