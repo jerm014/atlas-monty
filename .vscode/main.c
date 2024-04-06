@@ -10,7 +10,5 @@
 #include "../montyPint.c"
 #include "../montyPop.c"
 #include "../montyPush.c"
-#include "../montyPop.c"
-#include "../montyPush.c"
 #include "../montySwap.c"
 #include "../tokenize.c"
