@@ -43,6 +43,7 @@ typedef struct instruction_s
 void addNode(stack_t **stack, char **tokens, int n);
 int deleteNodeAtIndex(stack_t **, unsigned int);
 int free_double_pointer(char **);
+void free_stack(stack_t *);
 
 void (*monty_function(char *))(stack_t **, char **, unsigned int);
 void montyAdd(stack_t **, char **, unsigned int);

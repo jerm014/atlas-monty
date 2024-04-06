@@ -2,6 +2,7 @@
 #include "../addNode.c"
 #include "../deleteNodeAtIndex.c"
 #include "../free_double_pointer.c"
+#include "../free_stack.c"
 #include "../monty_function.c"
 #include "../montyAdd.c"
 #include "../montyError.c"
