@@ -3,6 +3,7 @@
 #include "../deleteNodeAtIndex.c"
 #include "../free_double_pointer.c"
 #include "../free_stack.c"
+#include "../isNumeric.c"
 #include "../monty_function.c"
 #include "../montyAdd.c"
 #include "../montyError.c"
@@ -24,6 +25,6 @@ int main(void)
 	argv[0] = malloc(2);
 	argv[0] = ".\0";
 	argv[1] = malloc(26);
-	argv[1] = "/atlas-monty/bytecode/6.m\0";
+	argv[1] = "/atlas-monty/bytecode/7.m\0";
 	return(_main(argc, argv));
 }

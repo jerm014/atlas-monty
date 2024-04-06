@@ -15,20 +15,23 @@ void montyPall(stack_t **stack, char **tokens, unsigned int lineNumber)
 	tokens = tokens;
 	lineNumber = lineNumber;
 
-	while (1)
+	if (*stack)
 	{
-		printf("%d\n", (*stack)->n);
-		if ((*stack)->next)
-			(*stack) = (*stack)->next;
-		else
-			break;
-	}
-	while (1)
-	{
-		if ((*stack)->prev)
-			(*stack) = (*stack)->prev;
-		else
-			break;
-	}
+		while (1)
+		{
 
+			printf("%d\n", (*stack)->n);
+			if ((*stack)->next)
+				(*stack) = (*stack)->next;
+			else
+				break;
+		}
+		while (1)
+		{
+			if ((*stack)->prev)
+				(*stack) = (*stack)->prev;
+			else
+				break;
+		}
+	}
 }
