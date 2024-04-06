@@ -40,6 +40,7 @@ int main(int argc, char **argv)
 		lineNumber++;
 	}
 
+	free_double_pointer(stack);
 	fclose(file);
 	exit(EXIT_SUCCESS);
 }

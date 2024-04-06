@@ -13,5 +13,13 @@
 void montyPush(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
 	lineNumber = lineNumber;
-	addNode(stack, tokens, atoi(tokens[1]));
+	if (tokens[1])
+		addNode(stack, tokens, atoi(tokens[1]));
+	else
+	{
+		free_double_pointer(stack);
+		free_double_pointer(tokens);
+		fprintf(stderr, ERR_INSTRUCTION, lineNumber, tokens[0]);
+		exit(EXIT_FAILURE);
+	}
 }
