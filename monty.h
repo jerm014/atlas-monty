@@ -40,11 +40,12 @@ typedef struct instruction_s
 
 /* Functions used in Monty: */
 
-void addNode(stack_t **stack, char **tokens, int n);
+void addNode(stack_t **, char **, int n);
 int deleteNodeAtIndex(stack_t **, unsigned int);
 int free_double_pointer(char **);
 void free_stack(stack_t *);
-int isNumeric(char *str);
+int isNumeric(char *);
+int _main(int, char **);
 
 void (*monty_function(char *))(stack_t **, char **, unsigned int);
 void montyAdd(stack_t **, char **, unsigned int);
