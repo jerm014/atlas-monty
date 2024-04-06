@@ -22,10 +22,12 @@ void (*monty_function(char *s))(stack_t **, char **, unsigned int)
 		{"div", montyDiv},
 		{"mul", montyMul},
 		{"mod", montyMod},
-		{"#", montyNop},
 		{NULL, NULL}
 	};
 	int i = 0;
+
+	if (strncmp(s[0], "#", 1) == 0)
+		return (montyNop);
 
 	while ((ops[i]).opcode)
 	{
