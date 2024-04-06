@@ -80,6 +80,7 @@ char **tokenize(char *, char *);
 #define ERR_DIV0			"L%d: division by zero\n"
 #define ERR_MUL				"L%d: can't mul, stack too short\n"
 #define ERR_MOD				"L%d: can't mod, stack too short\n"
-#define ERR_PCHAR			"L%d: can't pchar, value out of range\n"
+#define ERR_PCHAR_RANGE		"L%d: can't pchar, value out of range\n"
+#define ERR_PCHAR			"L%d: can't pchar, stack empty\n"
 
 #endif

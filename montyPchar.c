@@ -19,14 +19,14 @@ void montyPchar(stack_t **stack, char **tokens, unsigned int lineNumber)
 		else
 		{
 			free_stack(*stack);
-			fprintf(stderr, ERR_PCHAR, lineNumber);
+			fprintf(stderr, ERR_PCHAR_RANGE, lineNumber);
 			free_double_pointer(tokens);
 			exit(EXIT_FAILURE);
 		}
 	}
 	else
 	{
-		fprintf(stderr, ERR_PINT, lineNumber);
+		fprintf(stderr, ERR_PCHAR, lineNumber);
 		free_double_pointer(tokens);
 		exit(EXIT_FAILURE);
 	}
