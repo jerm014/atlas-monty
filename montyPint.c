@@ -1,17 +1,19 @@
 #include "monty.h"
 
 /**
- * montyPint- print the value from the top of the stack
+ * montyPint-  print the value from the top of the stack
  *
- * @stack:    pointer to the current stack
- * @n:        unused data
+ * @stack:     pointer to the current stack
+ * @tokens:    unused data
+ * @lineNumber: the line number we are processing
  *
- * Return:    nothing
+ * Return:     nothing
  *
  */
-void montyPint(stack_t **stack, int n)
+void montyPint(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
-	n = n;
+	tokens = tokens;
+	lineNumber = lineNumber;
 
 	if (stack)
 		printf("%d", (*stack)->n);

@@ -1,16 +1,20 @@
 #include "monty.h"
 
 /**
- * montySwap- swap the top two items in the stack
+ * montySwap-  swap the top two items in the stack
  *
- * @stack:    pointer to the current stack
- * @n:        unused data
+ * @stack:     pointer to the current stack
+ * @tokens:    unused data
+ * @lineNumber: the line number we are processing
  *
- * Return:    nothing
+ * Return:     nothing
  *
  */
-void montySwap(stack_t **stack, int n)
+void montySwap(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
+	int n = 0;
+	lineNumber = lineNumber;
+
 	n = deleteNodeAtIndex(stack, 1);
-	montyPush(stack, n);
+	addNode(stack, tokens, n);
 }

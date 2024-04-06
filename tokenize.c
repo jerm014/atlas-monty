@@ -34,11 +34,11 @@ char **tokenize(char *str, char *d)
 		return (NULL);
 
 /* init strtok with a duplicate of str */
-	copy = _strdup(str);
+	copy = strdup(str);
 	part = strtok(copy, d);
 	while (part)
 	{
-		result[k++] = _strdup(part);
+		result[k++] = strdup(part);
 		part = strtok(NULL, d);
 	}
 /* mark the end of the array with a NULL */

@@ -1,16 +1,18 @@
 #include "monty.h"
 
 /**
- * montyNop-  don't do anytning
+ * montyNop-   don't do anytning
  *
- * @stack:    unused data
- * @n:        unused data
+ * @stack:     unused data
+ * @tokens:    unused data
+ * @lineNumber: the line number we are processing
  *
- * Return:    nothing
+ * Return:     nothing
  *
  */
-void montyNop(stack_t **stack, int n)
+void montyNop(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
 	stack = stack;
-	n = n;
+	tokens = tokens;
+	lineNumber = lineNumber;
 }

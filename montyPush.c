@@ -1,32 +1,17 @@
 #include "monty.h"
 
 /**
- * montyPush- add an item to the stack
+ * montyPush-  add an item to the stack
  *
- * @stack:    pointer to the current stack
- * @n:        the value to add to the stack
+ * @stack:     pointer to the current stack
+ * @tokens:    the value to add to the stack
+ * @lineNumber: the line number we are processing
  *
- * Return:    nothing
+ * Return:     nothing
  *
  */
-void montyPush(stack_t **stack, int n)
+void montyPush(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
-	stack_t *new_node = NULL;
-
-	if (stack == NULL)
-		return (NULL);
-
-	new_node = malloc(sizeof(stack_t));
-	if (new_node == NULL)
-		return (NULL);
-
-	new_node->n = n;
-	new_node->next = *stack;
-
-	if (*stack)
-		(*stack)->prev = new_node;
-	else
-		new_node->prev = NULL;
-
-	*stack = new_node;
+	lineNumber = lineNumber;
+	addNode(stack, tokens, atoi(tokens[1]));
 }

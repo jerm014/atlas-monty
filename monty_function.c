@@ -8,7 +8,7 @@
  * Return:         the function for the opcode
  *
  */
-void (*monty_function(char *s))(stack_t **, unsigned int)
+void (*monty_function(char *s))(stack_t **, char **, unsigned int)
 {
 	instruction_t ops[] = {
 		{"push", montyPush},
@@ -24,11 +24,10 @@ void (*monty_function(char *s))(stack_t **, unsigned int)
 
 	while ((ops[i]).opcode)
 	{
-		if ((*(ops[i].opcode) == s[0]) && (*(ops[i].opcode) == s[1]))
+		if (strncmp(ops[i].opcode, s, strlen(s)) == 0)
 			return (ops[i].f);
+		if (ops[i + 1].f == NULL)
+			return (montyError);
 		i++;
 	}
-
-	return (NULL);
-
 }

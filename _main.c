@@ -10,8 +10,11 @@
  */
 int main(int argc, char **argv)
 {
-	int fd;
+	FILE *file;
 	char **tokens = NULL;
+	char line[4096];
+	stack_t *stack = NULL;
+	unsigned int lineNumber;
 
 	if (argc != 2)
 	{
@@ -19,20 +22,24 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	fd = open(argv[1], O_RDONLY);
-	if (fd == -1)
+	file = fopen(argv[1], "r");
+	if (file == NULL)
 	{
 		fprintf(stderr, ERR_FILE, argv[1]);
 		exit(EXIT_FAILURE);
 	}
 
-	while (getline(&buffer, &size, fd) != -1)
+	 while (fgets(line, sizeof(line), file))
 	{
-		tokens = tokenize(buffer, " \n");
+		tokens = tokenize(line, " \n");
 
 		if (tokens[0])
-			monty_function(tokens[0])(stack, tokens[1]);
+			monty_function(tokens[0])(&stack, tokens, lineNumber);
 
 		free_double_pointer(tokens);
+		lineNumber++;
 	}
+
+	fclose(file);
+	exit(EXIT_SUCCESS);
 }

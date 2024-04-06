@@ -1,19 +1,22 @@
 #include "monty.h"
 
 /**
- * montyAdd-  add the top two items in the stack
+ * montyAdd-    add the top two items in the stack
  *
- * @stack:    pointer to the current stack
- * @n:        unused data
+ * @stack:      pointer to the current stack
+ * @tokens:     unused data
+ * @lineNumber: the line number we are processing
  *
- * Return:    nothing
+ * Return:      nothing
  *
  */
-void montyAdd(stack_t **stack, int n)
+void montyAdd(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
 	int sum = 0;
 
+	lineNumber = lineNumber;
+
 	sum += deleteNodeAtIndex(stack, 0);
 	sum += deleteNodeAtIndex(stack, 0);
-	montyPush(stack, sum);
+	addNode(stack, tokens, sum);
 }
