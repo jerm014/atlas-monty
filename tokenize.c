@@ -44,6 +44,7 @@ char **tokenize(char *str, char *d)
 /* mark the end of the array with a NULL */
 	result[k] = NULL;
 	free(copy);
+	free(part);
 
 	return (result);
 }
