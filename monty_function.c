@@ -26,7 +26,7 @@ void (*monty_function(char *s))(stack_t **, char **, unsigned int)
 	};
 	int i = 0;
 
-	if (strncmp(s[0], "#", 1) == 0)
+	if (s[0] == '#')
 		return (montyNop);
 
 	while ((ops[i]).opcode)
