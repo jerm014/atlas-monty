@@ -23,7 +23,8 @@ int deleteNodeAtIndex(stack_t **node, unsigned int index)
 
 	if (index == 0)
 	{
-		(*node)->next->prev = NULL;
+		if ((*node)->next)
+			(*node)->next->prev = NULL;
 		temp_node = *node;
 		(*node) = (*node)->next;
 		n = temp_node->n;
