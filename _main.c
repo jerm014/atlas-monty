@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	/*file = fopen("/atlas-monty/bytecode/00.m", "r");*/
+	/* file = fopen("/atlas-monty/bytecode/00.m", "r"); */
 	file = fopen(argv[1], "r");
 	if (file == NULL)
 	{
