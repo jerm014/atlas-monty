@@ -15,6 +15,7 @@
 #include "../montySwap.c"
 #include "../tokenize.c"
 #include "../montySub.c"
+#include "../montyDiv.c"
 
 int main(void)
 {
