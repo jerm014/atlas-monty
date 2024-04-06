@@ -16,13 +16,13 @@ int main(int argc, char **argv)
 	stack_t *stack = NULL;
 	unsigned int lineNumber;
 
-	/*if (argc != 2)
+	if (argc != 2)
 	{
 		fprintf(stderr, ERR_ARG_COUNT);
 		exit(EXIT_FAILURE);
-	}*/
+	}
 
-	file = fopen("../bytecode/00.m", "r");
+	file = fopen(argv[1], "r");
 	if (file == NULL)
 	{
 		fprintf(stderr, ERR_FILE, argv[1]);
