@@ -24,7 +24,7 @@ void montySub(stack_t **stack, char **tokens, unsigned int lineNumber)
 	else
 	{
 		free_stack(*stack);
-		fprintf(stderr, ERR_ADD, lineNumber);
+		fprintf(stderr, ERR_SUB, lineNumber);
 		free_double_pointer(tokens);
 		exit(EXIT_FAILURE);
 	}

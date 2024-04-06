@@ -71,4 +71,6 @@ char **tokenize(char *, char *);
 #define ERR_MALLOC			"Error: malloc failed\n"
 #define ERR_SWAP			"L%d: can't swap, stack too short\n"
 #define ERR_ADD				"L%d: can't add, stack too short\n"
+#define ERR_SUB				"L%d: can't sub, stack too short\n"
+
 #endif
