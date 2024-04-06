@@ -17,5 +17,9 @@ void montyPint(stack_t **stack, char **tokens, unsigned int lineNumber)
 
 	if (*stack)
 		printf("%d", (*stack)->n);
-
+	else
+	{
+		free_double_pointer(tokens);
+		exit(EXIT_FAILURE);
+	}
 }
