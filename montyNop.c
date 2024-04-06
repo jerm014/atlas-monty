@@ -15,4 +15,5 @@ void montyNop(stack_t **stack, char **tokens, unsigned int lineNumber)
 	stack = stack;
 	tokens = tokens;
 	lineNumber = lineNumber;
+	/* wasn't that fun? */
 }

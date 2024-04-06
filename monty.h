@@ -59,9 +59,10 @@ char **tokenize(char *, char *);
 
 /* Error Messages */
 
-#define ERR_ARG_COUNT "USAGE: monty file\n"
-#define ERR_FILE "Error: Can't open file %s\n"
-#define ERR_INSTRUCTION "L%d: unknown instruction %s\n"
-#define ERR_MALLOC "Error: malloc failed\n"
+#define ERR_ARG_COUNT		"USAGE: monty file\n"
+#define ERR_FILE			"Error: Can't open file %s\n"
+#define ERR_INSTRUCTION		"L%d: unknown instruction %s\n"
+#define ERR_PUSH			"L%d: usage: push integer\n"
+#define ERR_MALLOC			"Error: malloc failed\n"
 
 #endif

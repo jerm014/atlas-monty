@@ -13,7 +13,7 @@
  void montyError(stack_t **stack, char **tokens, unsigned int lineNumber)
  {
 	free_stack(*stack);
- 	free_double_pointer(tokens);
 	fprintf(stderr, ERR_INSTRUCTION, lineNumber, tokens[0]);
+ 	free_double_pointer(tokens);
 	exit(EXIT_FAILURE);
  }

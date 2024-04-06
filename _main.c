@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	char **tokens = NULL;
 	char line[4096];
 	stack_t *stack = NULL;
-	unsigned int lineNumber;
+	unsigned int lineNumber = 1;
 
 	if (argc != 2)
 	{
