@@ -58,6 +58,7 @@ void montyPush(stack_t **, char **, unsigned int);
 void montySwap(stack_t **, char **, unsigned int);
 void montySub(stack_t **, char **, unsigned int);
 void montyDiv(stack_t **, char **, unsigned int);
+void montyMul(stack_t **, char **, unsigned int);
 
 char **tokenize(char *, char *);
 
@@ -75,5 +76,6 @@ char **tokenize(char *, char *);
 #define ERR_SUB				"L%d: can't sub, stack too short\n"
 #define ERR_DIV				"L%d: can't div, stack too short\n"
 #define ERR_DIV0			"L%d: division by zero\n"
+#define ERR_MUL				"L%d: can't mul, stack too short\n"
 
 #endif

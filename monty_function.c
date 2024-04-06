@@ -20,6 +20,7 @@ void (*monty_function(char *s))(stack_t **, char **, unsigned int)
 		{"nop", montyNop},
 		{"sub", montySub},
 		{"div", montyDiv},
+		{"mul", montyMul},
 		{NULL, NULL}
 	};
 	int i = 0;
