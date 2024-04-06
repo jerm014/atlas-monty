@@ -13,3 +13,17 @@
 #include "../montyPush.c"
 #include "../montySwap.c"
 #include "../tokenize.c"
+
+int main(void)
+{
+	int argc;
+	char **argv;
+
+	argc = 2;
+	argv = malloc(sizeof(char *));
+	argv[0] = malloc(2);
+	argv[0] = ".\0";
+	argv[1] = malloc(26);
+	argv[1] = "/atlas-monty/bytecode/6.m\0";
+	return(_main(argc, argv));
+}

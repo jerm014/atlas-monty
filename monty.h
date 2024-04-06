@@ -44,6 +44,7 @@ void addNode(stack_t **stack, char **tokens, int n);
 int deleteNodeAtIndex(stack_t **, unsigned int);
 int free_double_pointer(char **);
 void free_stack(stack_t *);
+int isNumeric(char *str);
 
 void (*monty_function(char *))(stack_t **, char **, unsigned int);
 void montyAdd(stack_t **, char **, unsigned int);

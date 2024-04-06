@@ -1,14 +1,14 @@
 #include "monty.h"
 
 /**
- * main -   main entry point for MONTY
+ * _main -  main entry point for MONTY, called from main and from vscode/main
  *
  * @argc:   the count of arguments
  * @argv:   the arguments
  *
  * Returns: 0 success
  */
-int main(int argc, char **argv)
+int _main(int argc, char **argv)
 {
 	FILE *file;
 	char **tokens = NULL;

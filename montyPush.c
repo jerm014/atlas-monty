@@ -13,8 +13,10 @@
 void montyPush(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
 	lineNumber = lineNumber;
-	if (tokens[1])
+	if (tokens[1] && isNumeric(tokens[1]))
+	{
 		addNode(stack, tokens, atoi(tokens[1]));
+	}
 	else
 	{
 		free_stack(*stack);
