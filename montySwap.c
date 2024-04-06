@@ -16,6 +16,15 @@ void montySwap(stack_t **stack, char **tokens, unsigned int lineNumber)
 
 	lineNumber = lineNumber;
 
-	n = deleteNodeAtIndex(stack, 1);
-	addNode(stack, tokens, n);
+	if (*stack)
+	{
+		n = deleteNodeAtIndex(stack, 1);
+		addNode(stack, tokens, n);
+	}
+	else
+	{
+		fprintf(stderr, ERR_SWAP, lineNumber);
+		free_double_pointer(tokens);
+		exit(EXIT_FAILURE);
+	}
 }
