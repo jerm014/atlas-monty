@@ -14,9 +14,17 @@ void montyAdd(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
 	int sum = 0;
 
-	lineNumber = lineNumber;
-
-	sum += deleteNodeAtIndex(stack, 0);
-	sum += deleteNodeAtIndex(stack, 0);
-	addNode(stack, tokens, sum);
+	if (*stack && (*stack)->next)
+	{
+		sum += deleteNodeAtIndex(stack, 0);
+		sum += deleteNodeAtIndex(stack, 0);
+		addNode(stack, tokens, sum);
+	}
+	else
+	{
+		free_stack(stack);
+		fprintf(stderr, ERR_ADD, lineNumber);
+		free_double_pointer(tokens);
+		exit(EXIT_FAILURE);
+	}
 }

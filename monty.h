@@ -69,5 +69,5 @@ char **tokenize(char *, char *);
 #define ERR_POP				"L%d: can't pop an empty stack\n"
 #define ERR_MALLOC			"Error: malloc failed\n"
 #define ERR_SWAP			"L%d: can't swap, stack too short\n"
-
+#define ERR_ADD				"L%d: can't add, stack too short\n"
 #endif
