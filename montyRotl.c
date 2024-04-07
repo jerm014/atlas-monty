@@ -17,6 +17,6 @@ void montyRotl(stack_t **stack, char **tokens, unsigned int lineNumber)
 
 	if (*stack && (*stack)->next)
 	{
-		addNodeAtend(stack, tokens, deleteNodeAtIndex(stack, 0));
+		addNodeAtEnd(stack, tokens, deleteNodeAtIndex(stack, 0));
 	}
 }
