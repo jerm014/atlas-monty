@@ -1,5 +1,6 @@
 #include "../_main.c"
 #include "../addNode.c"
+#include "../addNodeAtEnd.c"
 #include "../deleteNodeAtIndex.c"
 #include "../free_double_pointer.c"
 #include "../free_stack.c"
@@ -20,6 +21,12 @@
 #include "../montyMod.c"
 #include "../montyPchar.c"
 #include "../montyMul.c"
+#include "../montyRotl.c"
+#include "../montyRotr.c"
+#include "../montyQueue.c"
+#include "../montyStack.c"
+#include "../getStackLen.c"
+
 
 int main(void)
 {
