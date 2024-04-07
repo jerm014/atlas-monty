@@ -16,6 +16,9 @@ int _main(int argc, char **argv)
 	char line[4096];
 	stack_t *stack = NULL;
 	unsigned int lineNumber = 1;
+	bool *Q;
+	
+	*Q = false;
 
 	if (argc != 2)
 	{
@@ -36,7 +39,7 @@ int _main(int argc, char **argv)
 		tokens = tokenize(line, " $\n");
 
 		if (tokens[0])
-			monty_function(tokens[0]) (&stack, tokens, lineNumber);
+			monty_function(tokens[0]) (&stack, tokens, lineNumber, Q);
 
 		free_double_pointer(tokens);
 		lineNumber++;

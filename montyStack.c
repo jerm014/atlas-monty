@@ -1,22 +1,22 @@
 #include "monty.h"
 
 /**
- * montyNop-    don't do anytning
+ * montyStack-  switch to stack mode
  *
  *
  * @stack:      unused data
  * @tokens:     unused data
  * @line:       the line number we are processing
- * @Q:          unused data
+ * @Q:          true for QUEUE mode, false for STACK mode
  *
  * Return:      nothing
  *
  */
-void montyNop(stack_t **stack, char **tokens, unsigned int line, bool *Q)
+
+void montyStack(stack_t **stack, char **tokens, unsigned int line, bool *Q)
 {
 	stack = stack;
 	tokens = tokens;
 	line = line;
-	Q = Q;
-	/* wasn't that fun? */
+	*Q = false;
 }

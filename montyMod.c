@@ -6,15 +6,18 @@
  *
  * @stack:      pointer to the current stack
  * @tokens:     unused data
- * @lineNumber: the line number we are processing
+ * @line:       the line number we are processing
+ * @Q:          unused data
  *
  * Return:      nothing
  *
  */
-void montyMod(stack_t **stack, char **tokens, unsigned int lineNumber)
+void montyMod(stack_t **stack, char **tokens, unsigned int line, bool *Q)
 {
 	int a = 0;
 	int b = 0;
+
+	Q = Q;
 
 	if (*stack && (*stack)->next)
 	{
@@ -25,14 +28,14 @@ void montyMod(stack_t **stack, char **tokens, unsigned int lineNumber)
 		else
 		{
 			free_stack(*stack);
-			fprintf(stderr, ERR_DIV0, lineNumber);
+			fprintf(stderr, ERR_DIV0, line);
 			free_double_pointer(tokens);
 			exit(EXIT_FAILURE);
 		}	}
 	else
 	{
 		free_stack(*stack);
-		fprintf(stderr, ERR_MOD, lineNumber);
+		fprintf(stderr, ERR_MOD, line);
 		free_double_pointer(tokens);
 		exit(EXIT_FAILURE);
 	}

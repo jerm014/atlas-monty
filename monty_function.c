@@ -8,7 +8,7 @@
  * Return:         the function for the opcode
  *
  */
-void (*monty_function(char *s))(stack_t **, char **, unsigned int)
+void (*monty_function(char *s))(stack_t **, char **, unsigned int, bool *)
 {
 	instruction_t ops[] = {
 		{"push", montyPush}, {"pall", montyPall}, {"pint", montyPint},

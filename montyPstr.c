@@ -6,17 +6,19 @@
  *
  * @stack:      pointer to the current stack
  * @tokens:     unused data
- * @lineNumber: the line number we are processing
+ * @line:       the line number we are processing
+ * @Q:          unused data
  *
  * Return:      nothing
  *
  */
-void montyPstr(stack_t **stack, char **tokens, unsigned int lineNumber)
+void montyPstr(stack_t **stack, char **tokens, unsigned int line, bool *Q)
 {
 	stack_t *temp_node;
 
 	tokens = tokens;
-	lineNumber = lineNumber;
+	line = line;
+	Q = Q;
 	temp_node = *stack;
 
 	if (temp_node)

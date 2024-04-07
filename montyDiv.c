@@ -6,15 +6,17 @@
  *
  * @stack:      pointer to the current stack
  * @tokens:     unused data
- * @lineNumber: the line number we are processing
+ * @line:       the line number we are processing
+ * @Q:          unused data
  *
  * Return:      nothing
  *
  */
-void montyDiv(stack_t **stack, char **tokens, unsigned int lineNumber)
+void montyDiv(stack_t **stack, char **tokens, unsigned int line, bool *Q)
 {
-	int a = 0;
-	int b = 0;
+	int a, b;
+
+	Q = Q;
 
 	if (*stack && (*stack)->next)
 	{
@@ -25,7 +27,7 @@ void montyDiv(stack_t **stack, char **tokens, unsigned int lineNumber)
 		else
 		{
 			free_stack(*stack);
-			fprintf(stderr, ERR_DIV0, lineNumber);
+			fprintf(stderr, ERR_DIV0, line);
 			free_double_pointer(tokens);
 			exit(EXIT_FAILURE);
 		}
@@ -33,7 +35,7 @@ void montyDiv(stack_t **stack, char **tokens, unsigned int lineNumber)
 	else
 	{
 		free_stack(*stack);
-		fprintf(stderr, ERR_DIV, lineNumber);
+		fprintf(stderr, ERR_DIV, line);
 		free_double_pointer(tokens);
 		exit(EXIT_FAILURE);
 	}

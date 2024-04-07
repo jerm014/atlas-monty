@@ -6,14 +6,16 @@
  *
  * @stack:      pointer to the current stack
  * @tokens:     unused data
- * @lineNumber: the line number we are processing
+ * @line:       the line number we are processing
+ * @Q:          unused data
  *
  * Return:      nothing
  *
  */
-void montyRotl(stack_t **stack, char **tokens, unsigned int lineNumber)
+void montyRotl(stack_t **stack, char **tokens, unsigned int line, bool *Q)
 {
-	lineNumber = lineNumber;
+	line = line;
+	Q = Q;
 
 	/* if there are not at least two nodes in the stack, don't bother. */
 	if (*stack && (*stack)->next)

@@ -6,25 +6,28 @@
  *
  * @stack:      pointer to the current stack
  * @tokens:     unused data
- * @lineNumber: the line number we are processing
+ * @line:       the line number we are processing
+ * @Q:          unused data
  *
  * Return:      nothing
  *
  */
-void montySub(stack_t **stack, char **tokens, unsigned int lineNumber)
+void montySub(stack_t **stack, char **tokens, unsigned int line, bool *Q)
 {
-	int sum = 0;
+	int a, b;
+
+	Q = Q;
 
 	if (*stack && (*stack)->next)
 	{
-		sum = deleteNodeAtIndex(stack, 1);
-		sum -= deleteNodeAtIndex(stack, 0);
-		addNode(stack, tokens, sum);
+		a = deleteNodeAtIndex(stack, 1);
+		b -= deleteNodeAtIndex(stack, 0);
+		addNode(stack, tokens, (a - b));
 	}
 	else
 	{
 		free_stack(*stack);
-		fprintf(stderr, ERR_SUB, lineNumber);
+		fprintf(stderr, ERR_SUB, line);
 		free_double_pointer(tokens);
 		exit(EXIT_FAILURE);
 	}

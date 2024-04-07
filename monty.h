@@ -36,7 +36,7 @@ typedef struct stack_s
 typedef struct instruction_s
 {
 	char *opcode;
-	void (*f)(stack_t **, char **, unsigned int);
+	void (*f)(stack_t **, char **, unsigned int, bool *);
 } instruction_t;
 
 /* Functions used in Monty: */
@@ -50,25 +50,25 @@ void free_stack(stack_t *);
 int isNumeric(char *);
 int _main(int, char **);
 
-void (*monty_function(char *))(stack_t **, char **, unsigned int);
-void montyAdd(stack_t **, char **, unsigned int);
-void montyError(stack_t **, char **, unsigned int);
-void montyNop(stack_t **, char **, unsigned int);
-void montyPall(stack_t **, char **, unsigned int);
-void montyPint(stack_t **, char **, unsigned int);
-void montyPop(stack_t **, char **, unsigned int);
-void montyPush(stack_t **, char **, unsigned int);
-void montySwap(stack_t **, char **, unsigned int);
-void montySub(stack_t **, char **, unsigned int);
-void montyDiv(stack_t **, char **, unsigned int);
-void montyMul(stack_t **, char **, unsigned int);
-void montyMod(stack_t **, char **, unsigned int);
-void montyPchar(stack_t **, char **, unsigned int);
-void montyPstr(stack_t **, char **, unsigned int);
-void montyQueue(stack_t **, char **, unsigned int);
-void montyRotl(stack_t **, char **, unsigned int);
-void montyRotr(stack_t **, char **, unsigned int);
-void montyStack(stack_t **, char **, unsigned int);
+void (*monty_function(char *))(stack_t **, char **, unsigned int, bool *);
+void montyAdd(stack_t **, char **, unsigned int, bool *);
+void montyError(stack_t **, char **, unsigned int, bool *);
+void montyNop(stack_t **, char **, unsigned int, bool *);
+void montyPall(stack_t **, char **, unsigned int, bool *);
+void montyPint(stack_t **, char **, unsigned int, bool *);
+void montyPop(stack_t **, char **, unsigned int, bool *);
+void montyPush(stack_t **, char **, unsigned int, bool *);
+void montySwap(stack_t **, char **, unsigned int, bool *);
+void montySub(stack_t **, char **, unsigned int, bool *);
+void montyDiv(stack_t **, char **, unsigned int, bool *);
+void montyMul(stack_t **, char **, unsigned int, bool *);
+void montyMod(stack_t **, char **, unsigned int, bool *);
+void montyPchar(stack_t **, char **, unsigned int, bool *);
+void montyPstr(stack_t **, char **, unsigned int, bool *);
+void montyQueue(stack_t **, char **, unsigned int, bool *);
+void montyRotl(stack_t **, char **, unsigned int, bool *);
+void montyRotr(stack_t **, char **, unsigned int, bool *);
+void montyStack(stack_t **, char **, unsigned int, bool *);
 
 char **tokenize(char *, char *);
 
