@@ -10,7 +10,6 @@
  * Return:      nothing
  *
  */
-extern bool G_STACK;
 
 void montyStack(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
