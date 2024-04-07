@@ -15,6 +15,8 @@ void montyPstr(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
 	stack_t *temp_node;
 
+	tokens = tokens;
+	lineNumber = lineNumber;
 	temp_node = *stack;
 
 	if (temp_node)
