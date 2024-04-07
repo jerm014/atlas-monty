@@ -14,6 +14,8 @@
  */
 void montyError(stack_t **stack, char **tokens, unsigned int line, bool *Q)
 {
+	Q = Q;
+
 	free_stack(*stack);
 	fprintf(stderr, ERR_INSTRUCTION, line, tokens[0]);
 	free_double_pointer(tokens);

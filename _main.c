@@ -16,9 +16,7 @@ int _main(int argc, char **argv)
 	char line[4096];
 	stack_t *stack = NULL;
 	unsigned int lineNumber = 1;
-	bool *Q;
-	
-	*Q = false;
+	bool *Q = {false};
 
 	if (argc != 2)
 	{
