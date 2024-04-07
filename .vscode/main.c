@@ -38,6 +38,6 @@ int main(void)
 	argv[0] = malloc(2);
 	argv[0] = ".\0";
 	argv[1] = malloc(26);
-	argv[1] = "/atlas-monty/bytecode/1.m\0";
+	argv[1] = "/atlas-monty/bytecode/3.m\0";
 	return(_main(argc, argv));
 }
