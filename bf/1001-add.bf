@@ -15,7 +15,7 @@ but we cannot output this value to the terminal since it is not ASCII encoded
 To display the ASCII character "X" we must add 48 to the value X
 We use a loop to compute 48 = 6 * 8
 
-++++ ++++  c1 = 8 and this will be our loop counter again
+++++ +++  
 [
 < +++ +++  Add 6 to c0
 > -        Subtract 1 from c1
