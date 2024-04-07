@@ -16,6 +16,10 @@
 #include "../tokenize.c"
 #include "../montySub.c"
 #include "../montyDiv.c"
+#include "../montyPstr.c"
+#include "../montyMod.c"
+#include "../montyPchar.c"
+#include "../montyMul.c"
 
 int main(void)
 {

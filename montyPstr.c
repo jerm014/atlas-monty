@@ -27,6 +27,8 @@ void montyPstr(stack_t **stack, char **tokens, unsigned int lineNumber)
 			{
 				printf("%c", temp_node->n);
 				temp_node = temp_node->next;
+				if (!temp_node)
+					break;
 			}
 			else
 				break;
