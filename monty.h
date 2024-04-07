@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <string.h>
+#include <stdbool.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -64,8 +65,10 @@ void montyMul(stack_t **, char **, unsigned int);
 void montyMod(stack_t **, char **, unsigned int);
 void montyPchar(stack_t **, char **, unsigned int);
 void montyPstr(stack_t **, char **, unsigned int);
+void montyQueue(stack_t **, char **, unsigned int);
 void montyRotl(stack_t **, char **, unsigned int);
 void montyRotr(stack_t **, char **, unsigned int);
+void montyStack(stack_t **, char **, unsigned int);
 
 char **tokenize(char *, char *);
 

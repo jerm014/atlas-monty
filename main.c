@@ -8,6 +8,8 @@
  *
  * Return:  0 success
  */
+bool G_STACK = true;
+
 int main(int argc, char **argv)
 {
 	return (_main(argc, argv));
