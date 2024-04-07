@@ -8,10 +8,11 @@
  *
  * Return:  0 success
  */
-bool G_STACK = true;
+bool G_STACK;
 
 int main(int argc, char **argv)
 {
+	G_STACK = true;
 	return (_main(argc, argv));
 }
 
