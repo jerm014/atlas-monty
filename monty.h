@@ -41,6 +41,7 @@ typedef struct instruction_s
 /* Functions used in Monty: */
 
 void addNode(stack_t **, char **, int n);
+void addNodeAtEnd(stack_t **node, int n);
 int deleteNodeAtIndex(stack_t **, unsigned int);
 int free_double_pointer(char **);
 void free_stack(stack_t *);
@@ -62,6 +63,7 @@ void montyMul(stack_t **, char **, unsigned int);
 void montyMod(stack_t **, char **, unsigned int);
 void montyPchar(stack_t **, char **, unsigned int);
 void montyPstr(stack_t **, char **, unsigned int);
+void montyRotl(stack_t **, char **, unsigned int);
 
 char **tokenize(char *, char *);
 
