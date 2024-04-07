@@ -16,10 +16,10 @@ int _main(int argc, char **argv)
 	char line[4096];
 	stack_t *stack = NULL;
 	unsigned int lineNumber = 1;
-	bool q = false;
+	bool q = 0;
 	bool *Q;
 
-	Q = q;
+	Q = &q;
 
 	if (argc != 2)
 	{

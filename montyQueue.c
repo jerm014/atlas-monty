@@ -18,5 +18,5 @@ void montyQueue(stack_t **stack, char **tokens, unsigned int line, bool *Q)
 	stack = stack;
 	tokens = tokens;
 	line = line;
-	*Q = true;
+	*Q = 1;
 }
