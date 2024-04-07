@@ -13,6 +13,8 @@
  */
 void montyRotl(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
+	lineNumber = lineNumber;
+
 	/* if there are not at least two nodes in the stack, don't bother. */
 	if (*stack && (*stack)->next)
 	{
