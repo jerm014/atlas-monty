@@ -21,7 +21,7 @@ void montySub(stack_t **stack, char **tokens, unsigned int line, bool *Q)
 	if (*stack && (*stack)->next)
 	{
 		a = deleteNodeAtIndex(stack, 1);
-		b -= deleteNodeAtIndex(stack, 0);
+		b = deleteNodeAtIndex(stack, 0);
 		addNode(stack, tokens, (a - b));
 	}
 	else
