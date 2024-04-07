@@ -61,6 +61,7 @@ void montyDiv(stack_t **, char **, unsigned int);
 void montyMul(stack_t **, char **, unsigned int);
 void montyMod(stack_t **, char **, unsigned int);
 void montyPchar(stack_t **, char **, unsigned int);
+void montyPstr(stack_t **, char **, unsigned int);
 
 char **tokenize(char *, char *);
 

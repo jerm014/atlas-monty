@@ -11,19 +11,11 @@
 void (*monty_function(char *s))(stack_t **, char **, unsigned int)
 {
 	instruction_t ops[] = {
-		{"push", montyPush},
-		{"pall", montyPall},
-		{"pint", montyPint},
-		{"pop", montyPop},
-		{"swap", montySwap},
-		{"add", montyAdd},
-		{"nop", montyNop},
-		{"sub", montySub},
-		{"div", montyDiv},
-		{"mul", montyMul},
-		{"mod", montyMod},
-		{"pchar", montyPchar},
-		{NULL, NULL}
+		{"push", montyPush}, {"pall", montyPall}, {"pint", montyPint},
+		{"pop", montyPop}, {"swap", montySwap}, {"add", montyAdd},
+		{"nop", montyNop}, {"sub", montySub}, {"div", montyDiv},
+		{"mul", montyMul}, {"mod", montyMod}, {"pchar", montyPchar},
+		{"pstr",montyPstr}, {NULL, NULL}
 	};
 	int i = 0;
 

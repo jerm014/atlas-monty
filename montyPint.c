@@ -12,6 +12,7 @@
  */
 void montyPint(stack_t **stack, char **tokens, unsigned int lineNumber)
 {
+
 	if (*stack)
 		printf("%d\n", (*stack)->n);
 	else
